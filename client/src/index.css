@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: rgba(235, 232, 232, 0.688);
+}
+
+.scroll-hide::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width:700px) {
+    html{
+        font-size:60%;
+    }
+}
+@media (max-width:400px) {
+    html{
+        font-size:40%;
+    }
+}
