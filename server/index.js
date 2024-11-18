@@ -23,7 +23,7 @@ cloudinary.config({
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://merntask-taupe.vercel.app",
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"],
