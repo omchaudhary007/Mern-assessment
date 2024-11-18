@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "https://mernbackend-4lo5.onrender.com";
 
 const apiRequest = async (endpoint, options, method) => {
   options.method = method;
