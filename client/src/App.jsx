@@ -23,7 +23,7 @@ const App = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const result = await get("/admin/getAdmin", { credentials: "include" });
+        const result = await get("/admin/getAdmin", { credentials: "include",headers: { "Content-Type": "application/json" } });
         setUsername(result.userName);
       } catch (error) {
         console.error("Something went wrong!");
