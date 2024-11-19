@@ -14,6 +14,7 @@ const Login = () => {
       setLoading(true);
       const options = {
         credentials: "include",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userName, password }),
       };
       const result = await post("/admin/login", options);
