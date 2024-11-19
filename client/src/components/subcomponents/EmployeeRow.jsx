@@ -12,6 +12,7 @@ const EmployeeRow = ({ props }) => {
       setLoading(true);
       const options = {
         credentials: "include",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ _id: employee._id }),
       };
       const result = await post("/employee/delete", options);
